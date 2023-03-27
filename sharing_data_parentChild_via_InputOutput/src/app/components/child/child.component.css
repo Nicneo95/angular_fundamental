@@ -1,0 +1,14 @@
+.child {
+    border: solid orange;
+    margin: 10px;
+}
+
+.h1 {
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

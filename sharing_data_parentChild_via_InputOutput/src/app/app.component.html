@@ -1,0 +1,11 @@
+<div class="parent">
+  <h1 class="h1">Parent Component</h1>
+  <ul class="form">
+    <li *ngFor="let bev of beverages">{{bev}}</li>
+  </ul>
+  <!-- childBeverage is property we define in child component [] to bind it to the property in the parent class -->
+  <!-- newBeverageEvent is from child.ts the event we want to listen to we bind it to a function we want to execute in the parent class -->
+  <app-child
+    [childBeverage]="parentBeverage" 
+  (newBeverageEvent)="addBeverage($event)"></app-child>
+</div>

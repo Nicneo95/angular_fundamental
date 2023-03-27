@@ -1,0 +1,14 @@
+<div class="child">
+  <h1 class="h1">Child Component</h1>
+  <p class="h1">
+    <!-- bind the child property by adding {{}} -->
+    Today's beverage: <strong>{{ childBeverage }}</strong>
+  </p>
+  <div class="form">
+    <label class="h1" for="beverageInput">Add a beverage: </label>
+    <!-- we use # as a reference so later we can retrive the value by calling newBeverage.value -->
+    <input type="text" id="beverageInput" #newBeverage />
+    <!-- click is the event we want to listen, we execute the addNewBeverage() when click happen   -->
+    <button (click)="addNewBeverage(newBeverage.value)">Add</button>
+  </div>
+</div>
